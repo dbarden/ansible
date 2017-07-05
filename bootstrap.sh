@@ -5,7 +5,7 @@ set -e
 
 # Check for bundler
 echo -n "Step: Looking for Homebrew... "
-if ! which bundler >& /dev/null; then
+if ! which brew >& /dev/null; then
     echo "❌"
     echo "Installing Homebrew"
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

@@ -6,3 +6,30 @@
       with_items:
         - wget
         - mas
+        - carthage
+        - chruby
+        - chruby-fish
+        - fish
+        - tig
+        - the_silver_searcher
+    
+    - name: install homebrew cask
+      homebrew_cask: name={{ item }} state=present
+      with_items:
+        - brisk            
+        - plex-media-player
+        - charles
+        - dropbox
+        - reveal
+        - visual-studio-code
+        - cisco-spark
+        - franz
+        - slack
+        - vlc
+        - cyberduck
+        - iterm2
+        - sourcetree
+        - wwdc
+        - dash
+        - macdown
+        - spotify
